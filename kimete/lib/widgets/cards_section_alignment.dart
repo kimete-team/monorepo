@@ -58,13 +58,13 @@ class _CardsSectionState extends State<CardsSectionAlignment>
   Widget build(BuildContext context) {
     return Expanded(
         child: Stack(
-      children: <Widget>[
-        backCard(),
-        middleCard(),
-        frontCard(),
+          children: <Widget>[
+            backCard(),
+            middleCard(),
+            frontCard(),
 
         // Prevent swiping if the cards are animating
-        _controller.status != AnimationStatus.forward
+            _controller.status != AnimationStatus.forward
             ? SizedBox.expand(
                 child: GestureDetector(
                 // While dragging the first card

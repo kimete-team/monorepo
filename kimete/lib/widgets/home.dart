@@ -30,13 +30,13 @@ class Home extends StatelessWidget {
           FloatingActionButton(
             onPressed: (){},
             backgroundColor: Colors.white,
-            child: Icon(Icons.close, color: Colors.red),
+            child: Icon(Icons.thumb_down, color: Colors.red),
           ),
           Padding(padding: EdgeInsets.only(right: 8.0)),
           FloatingActionButton(
             onPressed: () {},
             backgroundColor: Colors.white,
-            child: Icon(Icons.favorite, color: Colors.green),
+            child: Icon(Icons.thumb_up, color: Colors.green),
           ),
           Padding(padding: EdgeInsets.only(right: 8.0)),
           FloatingActionButton(
