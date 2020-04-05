@@ -12,7 +12,10 @@ class ProfileCardAlignment extends StatelessWidget {
           SizedBox.expand(
             child: Material(
               borderRadius: BorderRadius.circular(12.0),
-              child: Image.asset('assets/portrait.jpeg', fit: BoxFit.cover),
+              child: Image.network(
+                  'https://pbs.twimg.com/profile_images/910465899672383488/YDLlXwrB.jpg',
+                  fit: BoxFit.cover
+              ),
             ),
           ),
           SizedBox.expand(
@@ -32,7 +35,7 @@ class ProfileCardAlignment extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text('Card number $cardNum',
+                    Text('$cardNum : 筋トレをする',
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 20.0,
