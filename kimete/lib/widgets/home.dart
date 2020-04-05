@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:kimete/widgets/cards_section_alignment.dart';
+import 'package:kimete/widgets/cards_section_draggable.dart';
 
 class Home extends StatelessWidget {
+  bool showAlignmentCards = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
         children: <Widget>[
+          showAlignmentCards
+            ? CardsSectionAlignment(context)
+            : CardsSectionDraggable(),
           buttonRow()
         ],
       ),
