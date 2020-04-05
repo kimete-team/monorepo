@@ -1,2 +1,1 @@
-kimete-monorepo
-# mononrepo
+# Kimete monorepo
