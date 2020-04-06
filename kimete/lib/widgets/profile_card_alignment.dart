@@ -6,7 +6,7 @@ class ProfileCardAlignment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card( 
+    return Card(
       child: Stack(
         children: <Widget>[
           SizedBox.expand(
